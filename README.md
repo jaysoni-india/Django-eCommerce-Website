@@ -112,6 +112,15 @@ This project is a full-fledged eCommerce website built using Django, a high-leve
 
 To run this project locally, follow these steps:
 
+Note: if you've docker installed in your system, and want to browse just for feature try below
+```bash
+cp .env.example .env
+docker compose up
+# in new terminal
+docker run django_ecommerce_website_web python manage.py migrate
+# open http://127.0.0.1:8000/ in your browser
+```
+
 1. **Clone the repository:**
 
    ```bash

@@ -33,8 +33,8 @@ def index(request):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
     except Exception as e:
+        print("try running migration or Go through Readme.md #setup-instruction section, in root of project")
         print(e)
-
     context = {
         'products': products,
         'categories': categories,
